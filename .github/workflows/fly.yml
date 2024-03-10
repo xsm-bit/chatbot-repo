@@ -1,8 +1,8 @@
 name: Fly Deploy
 on:
- push:
-  branches:
-   - main # change to main if needed
+  push:
+   branches:
+    - main # change to main if needed
  jobs:
   deploy:
    name: Deploy app
@@ -14,3 +14,4 @@ on:
     - run: flyctl deploy --remote-only
       env:
        FLY_API_TOKEN: ${{ secrets.FLY_API_TOKEN }}
+       
