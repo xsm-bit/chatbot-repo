@@ -9,7 +9,7 @@ on:
    runs-on: ubuntu-latest
    concurrency: deploy-group # optional: ensure only one action runs at a time
    steps:
-    - uses: actions/chatbot01
+    - uses: actions/chatbot1
     - uses: superfly/flyctl-actions/setup-flyctl@main
     - run: flyctl deploy --remote-only
       env:
