@@ -12,5 +12,5 @@ on:
     - uses: actions/chatbot01
     - uses: superfly/flyctl-actions/setup-flyctl@main
     - run: flyctl deploy --remote-only
-     env:
-      FLY_API_TOKEN: ${{ secrets.FLY_API_TOKEN }}
+      env:
+       FLY_API_TOKEN: ${{ secrets.FLY_API_TOKEN }}
